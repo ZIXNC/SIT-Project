@@ -1,0 +1,94 @@
+/* Font */
+* {
+  margin: 0;
+}
+
+.thasadith-regular {
+  font-family: "Thasadith", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.thasadith-bold {
+  font-family: "Thasadith", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.thasadith-regular-italic {
+  font-family: "Thasadith", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.thasadith-bold-italic {
+  font-family: "Thasadith", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Navigator Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(121, 138, 115, 1);
+    padding: 20px;
+}
+
+.logo img {
+  padding-left: 1px;
+  width: 40%;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.profileimg {
+  width: 10%;
+}
+
+.ground {
+  text-align: center;
+  color: rgba(93, 114, 86, 1);
+  font-size: 90px;
+  padding-top: 60px;
+}
+
+body {
+  background-image: url(./bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.describe {
+  color: rgba(224, 218, 201, 1);
+  font-size: 60px;
+  padding: 80px;
+  text-align: center;
+}
+
+.describe p span {
+  color: white
+}
+
+.travel {
+  display: flex;
+  width: 100%;
+  justify-content: center
+}
+
+* {
+  font-family: "Thasadith", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
