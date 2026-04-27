@@ -27,6 +27,12 @@
   font-style: italic;
 }
 
+.abhaya-libre-extrabold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
 /* Navigator Bar */
 .navbar {
     display: flex;
@@ -43,7 +49,7 @@
 
 .menu {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: end;
   align-items: center;
 }
@@ -54,7 +60,8 @@
 }
 
 .profileimg {
-  width: 10%;
+  width: 20%;
+  padding-right: 10px;
 }
 
 .ground {
@@ -72,8 +79,8 @@ body {
 
 .describe {
   color: rgba(224, 218, 201, 1);
-  font-size: 60px;
-  padding: 80px;
+  font-size: 5em;
+  padding: 120px;
   text-align: center;
 }
 
@@ -82,13 +89,67 @@ body {
 }
 
 .travel {
+  height: 40%;
+}
+
+.travel button a {
+  text-decoration: none;
+  color: white;
+}
+
+.travel button {
   display: flex;
-  width: 100%;
-  justify-content: center
+  width: 10%;
+  justify-content: center;
+  justify-self: center;
+  padding: 20px ;
+  border-radius: 20px;
+  background-color: rgba(93, 114, 86, 1);
+  font-size: 22px;
+  box-shadow: 2px 2px 4px black;;
 }
 
 * {
   font-family: "Thasadith", sans-serif;
   font-weight: 700;
   font-style: normal;
+  text-shadow: 2px 2px 4px black;
+}
+
+@media screen and (max-width: 480px) {
+  .describe {
+  color: rgba(224, 218, 201, 1);
+  font-size: 1.85em;
+  padding: 120px;
+  text-align: center;
+  }
+
+  body {
+  background-image: url(./bg.png);
+  min-height: 100vh;
+}
+
+  .ground {
+  text-align: center;
+  color: rgba(93, 114, 86, 1);
+  font-size: 50px;
+  padding-top: 60px;
+  }
+
+  .travel button {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  justify-self: center;
+  padding: 10px ;
+  border-radius: 20px;
+  background-color: rgba(93, 114, 86, 1);
+  font-size: 22px;
+  box-shadow: 2px 2px 4px black;;
+  }
+
+  .profileimg {
+  width: 20%;
+  padding-right: 10px;
+  }
 }
