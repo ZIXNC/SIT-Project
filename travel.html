@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Low Carbon | Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar" id="shadowmenu">
+            <nav class="logo">
+                <img src="./tab.png" alt="">
+            </nav>
+            <div class="menu">
+                    <a href="./index.html">HOME</a>
+                    <a href="./travel.html">SERVICE</a>
+                    <img src="./profile.png" alt="" class="profileimg">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Start</label>
+            <input type="text" id="start-point" placeholder="จุดเริ่มต้น">
+            
+            <label>End</label>
+            <div class="end-input">
+                <input type="text" id="end-point" placeholder="จุดหมายปลายทาง">
+                <button id="confirm-btn">confirm</button>
+            </div>
+        </div>
+
+        <div class="options-container">
+            <div class="route-card normal" onclick="selectRoute(30, 5, 'Normal Line')">
+                <div class="card-info">
+                    <h3>Normal Line</h3>
+                    <p>⏱ 29 นาที | 📍 6.6 Km | ฿ 30 บาท</p>
+                    <div class="progress-bar"><div style="width: 80%; background: #8b7355;"></div></div>
+                </div>
+                <div class="card-action">
+                    <span>การปล่อย CO₂ 5 Kg</span>
+                </div>
+            </div>
+
+            <div class="route-card fast" onclick="selectRoute(55, 4, 'Fast Line')">
+                <div class="card-info">
+                    <h3>Fast Line</h3>
+                    <p>⏱ 20 นาที | 📍 5.6 Km | ฿ 55 บาท</p>
+                    <div class="progress-bar"><div style="width: 60%; background: #d4d44d;"></div></div>
+                </div>
+                <div class="card-action">
+                    <span>การปล่อย CO₂ 4 Kg</span>
+                </div>
+            </div>
+
+            <div class="route-card green" onclick="selectRoute(12, 2, 'Green Line')">
+                <div class="card-info">
+                    <h3>Green Line</h3>
+                    <p>⏱ 39 นาที | 📍 7.1 Km | ฿ 12 บาท</p>
+                    <div class="progress-bar"><div style="width: 30%; background: #556b2f;"></div></div>
+                </div>
+                <div class="card-action">
+                    <span>การปล่อย CO₂ 2 Kg</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary-card">
+            <div class="summary-header">สรุปยอด</div>
+            <div class="summary-body">
+                <div class="row">
+                    <span>คาร์บอนเครดิต</span>
+                    <span id="total-carbon">0 tCO₂eq</span>
+                </div>
+                <div class="row">
+                    <span>ยอดเงินทั้งหมด</span>
+                    <span id="total-price">0 บาท</span>
+                </div>
+                <hr>
+                <div class="row">
+                    <span>ช่องทางการรับเงิน</span>
+                    <span>บัตรเครดิต > </span>
+                </div>
+                <button class="confirm-sale-btn">ยืนยันการขาย</button>
+            </div>
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>

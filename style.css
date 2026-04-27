@@ -1,0 +1,178 @@
+:root {
+    --bg-color: #e5e4d3;
+    --header-color: #8c9c84;
+    --card-bg: #d9d9d9;
+    --text-dark: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--bg-color);
+    width: 100%;
+    max-width: 500px; /* ขนาดสำหรับมือถือ */
+    min-height: 100vh;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ปรับหน้าจอสำหรับคอมพิวเตอร์ */
+@media (min-width: 768px) {
+.container {
+        max-width: 800px;
+        margin-top: 20px;
+        border-radius: 15px;
+        min-height: auto;
+    }
+}
+
+header {
+    background-color: var(--header-color);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.input-group {
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+.end-input {
+    display: flex;
+    gap: 5px;
+}
+
+#confirm-btn {
+    background: none;
+    border: 1px solid #333;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.route-card {
+    background-color: var(--card-bg);
+    margin: 10px 20px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.route-card:hover { transform: scale(1.02); }
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.progress-bar div { height: 100%; border-radius: 5px; }
+
+.select-btn {
+    background: #ccc;
+    border: 1px solid #333;
+    padding: 5px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.summary-card {
+    margin: 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.summary-header {
+    background: #b4c1ae;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.summary-body {
+    background: #d9d9d9;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.confirm-sale-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #5e6f58;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(121, 138, 115, 1);
+    padding: 20px;
+}
+
+.logo img {
+  padding-left: 1px;
+  width: 40%;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.profileimg {
+  width: 20%;
+  padding-right: 10px;
+}
+
+* {
+  font-family: "Thasadith", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#shadowmenu {
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 2px 2px 4px black;
+}
